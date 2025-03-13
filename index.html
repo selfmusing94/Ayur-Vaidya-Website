@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayur Vaidya Pro - AI-Powered Ayurvedic Health Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="logo">
+                <h2>Ayur Vaidya Pro</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-history"></i> History</a>
+                <a href="#"><i class="fas fa-book-medical"></i> Health Records</a>
+                <a href="#"><i class="fas fa-user"></i> Profile</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                <div class="user-details">
+                    <p class="user-name">Gaurav</p>
+                    <p class="user-status">Online</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-center">
+                    <h1>Welcome to Ayur Vaidya Pro</h1>
+                    <p class="current-date" id="currentDate">2025-03-12</p>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Consultation Section -->
+                <section class="consultation-section">
+                    <h2>AI Health Consultation</h2>
+                    <div class="consultation-form">
+                        <textarea id="symptoms" placeholder="Describe your symptoms or health concerns..."></textarea>
+                        <button id="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Get Consultation
+                        </button>
+                    </div>
+                    <div id="results" class="results-container"></div>
+                </section>
+
+                <!-- Quick Stats -->
+                <section class="quick-stats">
+                    <h3>Your Health Overview</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>Consultations</h4>
+                            <p>12</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>Follow-ups</h4>
+                            <p>5</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-star"></i>
+                            <h4>Progress</h4>
+                            <p>85%</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
